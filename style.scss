@@ -1,0 +1,70 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+@import "pages/home-page/styles/home-page.scss";
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--color-background);
+  color: var(--color-primary);
+}
+
+[class*="__container"] {
+  max-width: 1166px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+  .home-page__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 247px 0px;
+    
+  }
+  .home-page__text-block {
+    width: 556px;
+    margin-right: 0;
+  }
+  .home-page__text-block-title {
+    margin-bottom: 16px;
+  }
+  .home-page__text-block-subtitle {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 594px) {
+    .home-page__block {
+        margin: 48px 0px;
+      }
+    .home-page__cards-block {
+        .cards-block__items {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(1, 1fr);
+          column-gap: 16px;
+          row-gap: 16px;
+        }
+      }
+}
+@media (max-width: 425px) {
+  .home-page__text-block-title {
+    font-size: 32px;
+  }
+  .home-page__text-block-subtitle {
+    font-size: 16px;
+  }
+  .home-page__cards-block {
+    .cards-block__body {
+      max-width: 343px;
+      padding: 16px;
+    }
+    .cards-block__description {
+      max-width: 333px;
+    }
+  }
+}

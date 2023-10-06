@@ -1,0 +1,97 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+/// 
+/// 
+
+.home-page {
+
+	&__block {
+		margin-top: 159px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__text-block {
+		width: 467px;
+		margin-right: 109px;
+	}
+
+	&__text-block-title {
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 1.16;
+		letter-spacing: -0.096px;
+	}
+
+	&__text-block-subtitle {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+	&__cards-block {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		.cards-block__items {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			column-gap: 24px;
+			row-gap: 24px;
+		}
+
+		.cards-block__body {
+			text-align: center;
+			width: 268px;
+			padding: 24px 3px 24px 2px;
+			border-radius: 24px;
+			background: #272D42;
+		}
+
+		.cards-block__icon {
+			display: flex;
+			border-radius: 16px;
+			width: 64px;
+			height: 64px;
+			background-color: #000;
+			margin: 0 auto;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.cards-block__icon-purple {
+			background: #373155;
+		}
+
+		.cards-block__icon-blue {
+			background: #2C3455;
+		}
+
+		.cards-block__icon-green {
+			background: #274255;
+		}
+
+		.cards-block__icon-yellow {
+			background: #3D413F;
+		}
+
+		.cards-block__caption {
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 1.2;
+			margin: 16px 0px;
+		}
+
+		.cards-block__description {
+			width: 236px;
+			margin: 0 auto;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 1.5;
+			opacity: 0.5;
+		}
+	}
+}
